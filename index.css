@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Grayish-Blue);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.hero{
+    background-color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px 5px 0 0;
+    line-height: 1.5;
+}
+.hero h1{
+    color: var(--Cyan) ;
+    padding-bottom: 15px;
+}
+.hero h3{
+    color: var(--Bright-Yellow);
+    padding-bottom: 10px;
+
+}
+.hero p{
+    color:var(--Grayish-Blue)
+}
+
+
+.bottom{
+    background: hsl(179, 93%, 32%);
+    color: var(--Light-Gray);
+    border-radius: 0 0 5px 5px;
+}
+
+.bottom h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+.bottom .dark{
+    padding: 20px;   
+}
+
+.bottom .dark h4{
+    font-weight: 400;
+    color: var(--Light-Gray);
+    display: flex;
+    align-items: center;
+}
+.bottom .dark h4 span{
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 10px;
+
+}
+
+.bottom .dark p {
+    margin-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.bottom .dark .btn{
+    border: none;
+    outline: none;
+    color: var(--Light-Gray);
+    background-color: var(--Bright-Yellow);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(50, 61, 1, 0.5);
+    width: 100%;
+}
+.bottom .dark .btn:hover {
+    cursor: pointer;
+}
+
+.bottom .light{
+    background-color: var(--Cyan);
+    padding: 50px;
+    border-radius: 0 0 5px 5px;
+}
+
+.light ul {
+  padding: 0;
+}
+
+.light ul li {
+  font-size: 14px;
+  color: var(--LightGray);
+}
+
+@media (min-width: 768px) {
+    .container {
+      padding-top: 100px;
+      max-width: 650px;
+      border-radius: 10px;
+      margin-left: 750px;
+    }
+
+    .hero {
+        padding: 50px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }  
+
+    .bottom .dark {
+        padding: 50px 30px 50px 50px;
+    }
+    
+    .light {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 10px 0;
+        width: 330px;
+        padding: 50px 0 0 50px;
+    }
+
+    .light ul li {
+        line-height: 1.7;
+      }
+  }
